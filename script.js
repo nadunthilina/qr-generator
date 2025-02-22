@@ -14,3 +14,9 @@ generateBtn.addEventListener("click", () => {
     generateBtn.innerText = "Generate QR Code";
   });
 });
+qrInput.addEventListener("keyup", () => {
+  if (!qrInput.value.trim()) {
+    wrapper.classList.remove("active");
+    preValue = "";
+  }
+});
